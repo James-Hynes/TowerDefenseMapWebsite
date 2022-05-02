@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@codolog/form@1.0.0/dist/form.min.css" rel='stylesheet'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="stylesheet.css" rel='stylesheet'/>
+  </head>
+
+  <body>
+    <div style="outline: 2px solid black; background-color: lightgrey;">
+      <form>
+        <div style="width:100%;margin-left:50%;">
+          <label class='form'style='margin-top:5px;'>Random Level Gen Feedback</label>
+          <div class="divider">
+          </div>
+            <div>
+              <label class='form full'>Rate the layout of the level</label>
+              <div>
+                <button type="button" class="layoutrating form danger" onclick="layoutClick(1)">1</button>
+                <button type="button" class="layoutrating form warning" onclick="layoutClick(2)">2</button>
+                <button type="button" class="layoutrating form" onclick="layoutClick(3)">3</button>
+                <button type="button" class="layoutrating form info" onclick="layoutClick(4)">4</button>
+                <button type="button" class="layoutrating form success" onclick="layoutClick(5)">5</button>
+              </div>
+            </div>
+            <div>
+              <div class="divider">
+              </div>
+              <label class='form full'>Are there any visual bugs?</label>
+              <div>
+                <button type="button" class="visualbugs form danger" onclick="visualBugClick(1)">Yes</button>
+                <button type="button" class="visualbugs form success" onclick="visualBugClick(2)">No</button>
+              </div>
+              <div class="divider">
+              </div>
+              <button class="submit form full" type="button" onclick="submitAnswers()">Submit Answers</button>
+            </div>
+        </div>
+    </div>
+    <form>
+    </div>
+    <script src='Tile.js'></script>
+    <script src='main.js'></script>
+  </body>
+</html>
